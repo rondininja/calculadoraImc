@@ -1,4 +1,4 @@
-# Calculadora IMC
+# Nalu Fit
 Desc
 
 ## :camera_flash: Screenshots

@@ -1,19 +1,17 @@
 package com.comunidadedevspace.imc
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 const val KEY_RESULT_IMC = "ResultActivity.KEY_IMC"
 
-class ResultActivity : AppCompatActivity() {
+class ImcResultActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_result)
+        setContentView(R.layout.activity_imc_result)
 
         val result = intent.getFloatExtra(KEY_RESULT_IMC, 0f)
 
@@ -29,19 +27,24 @@ class ResultActivity : AppCompatActivity() {
      MAIOR QUE 40,0       OBSESIDADE GRAVE
      */
 
-        var classificacao: String = if(result <= 18.5f) {
-            "MAGREZA"
+        var classificacao = ""
+        if (result <= 18.5f) {
+            classificacao = "MAGREZA"
+            tvClassificacao.setTextColor(Color.parseColor("#9d1108"))
         } else if(result > 18.5f && result <= 24.9f) {
-            "NORMAL"
+            classificacao = "NORMAL"
+            tvClassificacao.setTextColor(Color.parseColor("#26910d"))
         } else if(result >= 25.0f && result <= 29.9f) {
-            "SOBREPESO"
+            classificacao = "SOBREPESO"
+            tvClassificacao.setTextColor(Color.parseColor("#c99a08"))
         } else if(result >= 30.0f && result <= 39.9f) {
-            "OBESIDADE"
+            classificacao = "OBESIDADE"
+            tvClassificacao.setTextColor(Color.parseColor("#c99a08"))
         } else {
-            "OBESIDADE GRAVE"
+            classificacao = "OBESIDADE GRAVE"
+            tvClassificacao.setTextColor(Color.parseColor("#9d1108"))
         }
 
         tvClassificacao.text = classificacao
-
     }
 }

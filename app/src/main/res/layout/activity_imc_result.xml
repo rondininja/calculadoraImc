@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".ResultActivity">
+    tools:context=".ImcResultActivity">
 
     <LinearLayout
         android:id="@+id/vg_header"
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:text="Calculadora IMC"
+            android:text="Cálculo de IMC"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />

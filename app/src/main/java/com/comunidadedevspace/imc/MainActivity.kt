@@ -12,45 +12,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val btnImc = findViewById<Button>(R.id.btn_imc)
+        val btnMacros = findViewById<Button>(R.id.btn_macros)
 
-        val edtPeso = findViewById<TextInputEditText>(R.id.edt_peso)
-        val edtAltura = findViewById<TextInputEditText>(R.id.edt_altura)
-
-        val btnCalcular = findViewById<Button>(R.id.btn_calcular)
-
-        btnCalcular.setOnClickListener {
-
-
-            val pesoStr: String = edtPeso.text.toString()
-            val alturaStr: String = edtAltura.text.toString()
-
-            if (pesoStr == "" || alturaStr == "") {
-                Snackbar
-                    .make(
-                        edtPeso,
-                        "Preencha todos os campos",
-                        Snackbar.LENGTH_LONG
-                )
-                .show()
-
-            } else{
-                val peso = pesoStr.toFloat()
-                val altura = alturaStr.toFloat()
-
-                val alturaQ2 = altura * altura
-                val resultado = peso / alturaQ2
-
-                val intent = Intent(this, ResultActivity::class.java)
-                intent.putExtra(KEY_RESULT_IMC, resultado)
-                startActivity(intent)
-
-                // Cores
-                // EditText background + Icone
-                // Gradiente + icone + título + descrição
-
-
-            }
+        btnImc.setOnClickListener {
+            val intent = Intent(this, ImcActivity::class.java)
+            startActivity(intent)
         }
 
+        btnMacros.setOnClickListener {
+            val intent = Intent(this, MacrosActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

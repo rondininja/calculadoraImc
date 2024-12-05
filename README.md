@@ -3,10 +3,16 @@ Aplicação Android com o objetivo de calcular o IMC ou os macronutrientes de um
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-Screenshots
+
+<img src = https://github.com/user-attachments/assets/3c2fc16e-f280-4e77-b97d-624b6516f5dc width = 260>
+<img src = https://github.com/user-attachments/assets/69c7b971-2ab3-4d03-aaf4-adfc125b2bdd width = 260>
+<img src = https://github.com/user-attachments/assets/2bd437f9-cb2e-4c28-b100-038b832f5a6c width = 260>
+<img src = https://github.com/user-attachments/assets/b5bb771f-5eeb-46ec-8aa9-3958d3d2352b width = 260>
+<img src = https://github.com/user-attachments/assets/b96b8ffc-1316-4f28-951a-36ce0029fc29 width = 260>
+<img src = https://github.com/user-attachments/assets/971d6161-234b-4021-a21f-f944dd5acd34 width = 260>
 
 ## Tecnologias
-Techs
+- Kotlin
 
 
 ## License

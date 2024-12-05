@@ -12,11 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculadoraimc"
         tools:targetApi="31">
-        <activity
-            android:name=".ResultActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+
+        <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MacrosResultActivity"
+            android:exported="false" />
+        <activity android:name=".MacrosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImcResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImcActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

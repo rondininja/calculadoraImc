@@ -1,5 +1,5 @@
 # Nalu Fit
-Desc
+Aplicação Android com o objetivo de calcular o IMC ou os macronutrientes de uma pessoa.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->

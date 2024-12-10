@@ -1,5 +1,5 @@
 # Nalu Fit
-Aplicação Android com o objetivo de calcular o IMC ou os macronutrientes de uma pessoa.
+Aplicação em Android nativo com a linguagem de programação Kotlin. Possui as funções de calcular o IMC ou os macronutrientes de uma pessoa e exibir isso em tela.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
